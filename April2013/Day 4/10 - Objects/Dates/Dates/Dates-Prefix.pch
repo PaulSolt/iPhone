@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Dates' target in the 'Dates' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
