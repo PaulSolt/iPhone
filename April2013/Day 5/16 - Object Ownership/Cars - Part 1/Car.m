@@ -10,14 +10,8 @@
 
 @implementation Car
 
-// Don't need in latest Xcode/Objective-C
-//@synthesize gasTankCapacity;
-//@synthesize milesPerGallon;
-
 - (float)distancePerGasTank {
-//    float distance = _gasTankCapacity * _milesPerGallon;
-    float distance = [self gasTankCapacity] * [self milesPerGallon];
-    
+    float distance = [self gasTankCapacity] * [self milesPerGallon];    
     return distance;
 }
 
