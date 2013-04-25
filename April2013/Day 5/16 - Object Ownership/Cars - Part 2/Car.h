@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+//#import "Person.h"
+
+// forward class declaration
 @class Person;
 
 @interface Car : NSObject {
@@ -19,11 +22,10 @@
 
 - (float)distancePerGasTank;
 
-// Object ownership
-
 @property int carId;
 
 - (void)addPassenger:(Person *)person;
 - (unsigned int)weightOfPassengers;
+
 
 @end

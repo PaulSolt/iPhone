@@ -12,31 +12,38 @@
 @implementation Car
 
 - (float)distancePerGasTank {
-    float distance = [self gasTankCapacity] * [self milesPerGallon];
+    float distance = [self gasTankCapacity] * [self milesPerGallon];    
     return distance;
 }
 
 - (void)addPassenger:(Person *)person {
-    if(!_passengers) { // Create the array if not already created (1st time)
+    // create the array, if nil
+    if(!_passengers) {
         _passengers = [[NSMutableArray alloc] init];
     }
+    // add the passenger
     [_passengers addObject:person];
 }
-
 - (unsigned int)weightOfPassengers {
-    unsigned int weight = 0;
-    
+    unsigned int totalWeight = 0;
     for(Person *person in _passengers) {
-        weight += person.weight;
+        unsigned int weight = person.weight;
+        totalWeight += weight;
     }
-    return weight;
+    return totalWeight;
 }
 
+// description and dealloc
+
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<Car: %d Passenger weight: %d", self.carId, [self weightOfPassengers]];
+    return [NSString stringWithFormat:@"<Car: %d Passenger weight: %d>", self.carId, [self weightOfPassengers]];
 }
 
 - (void)dealloc {
     NSLog(@"Deallocating: %@", self);
 }
+
+
+
+
 @end

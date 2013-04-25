@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Cars' target in the 'Cars' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
