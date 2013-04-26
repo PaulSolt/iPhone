@@ -22,10 +22,7 @@
 
 // Overiding class behavior
 - (float)distancePerGasTank {
-    
-//    return 75;
     float distance = [super distancePerGasTank];
-    
     return distance * 0.5;
 }
 

@@ -11,7 +11,7 @@
 @implementation Person
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"\t<Person: %@ weight: %d>", [self name], [self weight]];
+    return [NSString stringWithFormat:@"<Person: %@ Weight: %d Car: %@>", [self name], [self weight], self.car];
 }
 - (void)dealloc {
     NSLog(@"Deallocating: %@", self);

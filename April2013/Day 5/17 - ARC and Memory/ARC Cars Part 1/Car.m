@@ -33,7 +33,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<Car: %d Passenger weight: %d", self.carId, [self weightOfPassengers]];
+    return [NSString stringWithFormat:@"<Car: %d Passenger weight: %d>", self.carId, [self weightOfPassengers]];
 }
 
 - (void)dealloc {

@@ -29,17 +29,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BD2CBA3B172979CF00D2442A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		BD2CBA3C172979CF00D2442A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		DA17920E172844580023FAFE /* Cars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cars; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2CBA3B172979CF00D2442A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		BD2CBA3C172979CF00D2442A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		DA17920E172844580023FAFE /* ARC Cars Part 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ARC Cars Part 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA179211172844580023FAFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA179214172844580023FAFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA179217172844580023FAFE /* Cars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cars-Prefix.pch"; sourceTree = "<group>"; };
+		DA179217172844580023FAFE /* ARC Cars Part 1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARC Cars Part 1-Prefix.pch"; sourceTree = "<group>"; };
 		DA179218172844580023FAFE /* Cars.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Cars.1; sourceTree = "<group>"; };
-		DA17921F1728447A0023FAFE /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		DA1792201728447A0023FAFE /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
-		DA1792221728474E0023FAFE /* Convertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convertible.h; sourceTree = "<group>"; };
-		DA1792231728474E0023FAFE /* Convertible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Convertible.m; sourceTree = "<group>"; };
+		DA17921F1728447A0023FAFE /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = ../Car.h; sourceTree = "<group>"; };
+		DA1792201728447A0023FAFE /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = ../Car.m; sourceTree = "<group>"; };
+		DA1792221728474E0023FAFE /* Convertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Convertible.h; path = ../Convertible.h; sourceTree = "<group>"; };
+		DA1792231728474E0023FAFE /* Convertible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Convertible.m; path = ../Convertible.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,6 @@
 		DA179205172844580023FAFE = {
 			isa = PBXGroup;
 			children = (
-				DA17921F1728447A0023FAFE /* Car.h */,
-				DA1792201728447A0023FAFE /* Car.m */,
-				DA1792221728474E0023FAFE /* Convertible.h */,
-				DA1792231728474E0023FAFE /* Convertible.m */,
-				BD2CBA3B172979CF00D2442A /* Person.h */,
-				BD2CBA3C172979CF00D2442A /* Person.m */,
 				DA179213172844580023FAFE /* Cars */,
 				DA179210172844580023FAFE /* Frameworks */,
 				DA17920F172844580023FAFE /* Products */,
@@ -72,7 +66,7 @@
 		DA17920F172844580023FAFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA17920E172844580023FAFE /* Cars */,
+				DA17920E172844580023FAFE /* ARC Cars Part 1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +82,12 @@
 		DA179213172844580023FAFE /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				DA17921F1728447A0023FAFE /* Car.h */,
+				DA1792201728447A0023FAFE /* Car.m */,
+				DA1792221728474E0023FAFE /* Convertible.h */,
+				DA1792231728474E0023FAFE /* Convertible.m */,
+				BD2CBA3B172979CF00D2442A /* Person.h */,
+				BD2CBA3C172979CF00D2442A /* Person.m */,
 				DA179214172844580023FAFE /* main.m */,
 				DA179218172844580023FAFE /* Cars.1 */,
 				DA179216172844580023FAFE /* Supporting Files */,
@@ -98,7 +98,7 @@
 		DA179216172844580023FAFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA179217172844580023FAFE /* Cars-Prefix.pch */,
+				DA179217172844580023FAFE /* ARC Cars Part 1-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA17920D172844580023FAFE /* Cars */ = {
+		DA17920D172844580023FAFE /* ARC Cars Part 1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA17921C172844580023FAFE /* Build configuration list for PBXNativeTarget "Cars" */;
+			buildConfigurationList = DA17921C172844580023FAFE /* Build configuration list for PBXNativeTarget "ARC Cars Part 1" */;
 			buildPhases = (
 				DA17920A172844580023FAFE /* Sources */,
 				DA17920B172844580023FAFE /* Frameworks */,
@@ -118,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = Cars;
+			name = "ARC Cars Part 1";
 			productName = Cars;
-			productReference = DA17920E172844580023FAFE /* Cars */;
+			productReference = DA17920E172844580023FAFE /* ARC Cars Part 1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Paul Solt";
 			};
-			buildConfigurationList = DA179209172844580023FAFE /* Build configuration list for PBXProject "Cars" */;
+			buildConfigurationList = DA179209172844580023FAFE /* Build configuration list for PBXProject "ARC Cars Part 1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA17920D172844580023FAFE /* Cars */,
+				DA17920D172844580023FAFE /* ARC Cars Part 1 */,
 			);
 		};
 /* End PBXProject section */
@@ -227,8 +227,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cars/Cars-Prefix.pch";
-				PRODUCT_NAME = Cars;
+				GCC_PREFIX_HEADER = "Cars/ARC Cars Part 1-Prefix.pch";
+				PRODUCT_NAME = "ARC Cars Part 1";
 			};
 			name = Debug;
 		};
@@ -236,15 +236,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cars/Cars-Prefix.pch";
-				PRODUCT_NAME = Cars;
+				GCC_PREFIX_HEADER = "Cars/ARC Cars Part 1-Prefix.pch";
+				PRODUCT_NAME = "ARC Cars Part 1";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA179209172844580023FAFE /* Build configuration list for PBXProject "Cars" */ = {
+		DA179209172844580023FAFE /* Build configuration list for PBXProject "ARC Cars Part 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA17921A172844580023FAFE /* Debug */,
@@ -253,7 +253,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA17921C172844580023FAFE /* Build configuration list for PBXNativeTarget "Cars" */ = {
+		DA17921C172844580023FAFE /* Build configuration list for PBXNativeTarget "ARC Cars Part 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA17921D172844580023FAFE /* Debug */,

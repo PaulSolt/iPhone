@@ -16,8 +16,9 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // Use a random starting seed (current time = time(NULL))
-        srandom((unsigned int)time(NULL));
+        // Use a random starting seed to randomize our random() values, otherwise they're
+        //  going to be the same random numbers. Use time to "seed" a new set of random numbers
+//        srandom((unsigned int)time(NULL));
         
         Person *person = [[Person alloc] init];
         
@@ -36,7 +37,7 @@ int main(int argc, const char * argv[])
             [cars addObject:car];
         }
         
-        for(int i = 0; i < 20; i++) {
+        for(int i = 0; i < 10; i++) {
             Person *aPerson = [[Person alloc] init];
             NSString *name = [NSString stringWithFormat:@"Person %d", i];
             
@@ -48,7 +49,7 @@ int main(int argc, const char * argv[])
             Car *car = [cars objectAtIndex:index];
             [car addPassenger:aPerson];
             
-            
+            NSLog(@"Allocated: %@", aPerson);
         }
 
         NSLog(@"Cars: %@", cars);
