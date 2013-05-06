@@ -22,17 +22,17 @@ int main(int argc, const char * argv[])
         NSLog(@"Name: %@", bob.name);
         
         // Get bobs name and change it
-        
-        // Good: Expected name change:
+
+        // Good Way: modify using a property
         bob.name = @"Bobby";
         NSLog(@"Name: %@", bob.name);
 
-        // Bad: Unexpected name change: store a mutable string
+        // Bad Way
+        bob.name = [[NSMutableString alloc] initWithString:@"Bob"];
         
-        // **Solution**: the copy property modifier provents this unwanted code from working
-        bob.name = [[NSMutableString alloc] initWithString:@"Bob"];        
-        NSMutableString *bobsName = (NSMutableString *)bob.name;        
-        [bobsName setString:@"Susan"];
+//        NSMutableString *value = (NSMutableString *)bob.name;
+//        
+//        [value setString:@"Susan"];
         
         NSLog(@"Name: %@", bob.name);
 

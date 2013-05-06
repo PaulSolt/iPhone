@@ -10,9 +10,7 @@
 
 @interface Person : NSObject
 
-@property (strong) NSString *name;
-//@property (copy) NSString *name;  // Use the "copy" modifier
-
+@property (copy, nonatomic) NSString *name;
 @property unsigned int weight;
 
 @end
