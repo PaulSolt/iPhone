@@ -30,9 +30,9 @@ int main(int argc, const char * argv[])
         // Bad: Unexpected name change: store a mutable string
         
         // **Solution**: the copy property modifier provents this unwanted code from working
-//        bob.name = [[NSMutableString alloc] initWithString:@"Bob"];        
-//        NSMutableString *bobsName = (NSMutableString *)bob.name;        
-//        [bobsName setString:@"Susan"];
+        bob.name = [[NSMutableString alloc] initWithString:@"Bob"];        
+        NSMutableString *bobsName = (NSMutableString *)bob.name;        
+        [bobsName setString:@"Susan"];
         
         NSLog(@"Name: %@", bob.name);
 
