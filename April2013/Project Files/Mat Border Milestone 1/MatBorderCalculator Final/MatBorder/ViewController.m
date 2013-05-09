@@ -56,7 +56,7 @@
     
     [self.imageWidthTextField resignFirstResponder];
     [self.imageHeightTextField resignFirstResponder];
-    [self.frameHeigthTextField resignFirstResponder];
+    [self.frameHeightTextField resignFirstResponder];
     [self.frameWidthTextField resignFirstResponder];
     
 }
@@ -73,7 +73,7 @@
     float imageHeight = self.imageHeightTextField.text.floatValue;
     
     float frameWidth = [self.frameWidthTextField text].floatValue;
-    float frameHeight = [self.frameHeigthTextField text].floatValue;
+    float frameHeight = [self.frameHeightTextField text].floatValue;
     
     float borderWidth = (frameWidth - imageWidth) / 2;
     float borderHeight = (frameHeight - imageHeight) / 2;
