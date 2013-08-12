@@ -12,7 +12,7 @@
 
 // Get and set values in the text box
 @property (weak, nonatomic) IBOutlet UITextField *frameWidthTextField;
-@property (weak, nonatomic) IBOutlet UITextField *frameHeigthTextField;
+@property (weak, nonatomic) IBOutlet UITextField *frameHeightTextField;
 @property (weak, nonatomic) IBOutlet UITextField *imageWidthTextField;
 @property (weak, nonatomic) IBOutlet UITextField *imageHeightTextField;
 
